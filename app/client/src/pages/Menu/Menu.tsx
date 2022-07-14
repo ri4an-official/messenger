@@ -4,7 +4,8 @@ const Menu = () => {
 }
 
 const StyledMenu = styled.div`
-    grid: 1px;
+    grid-area: menu;
+    border: 1px solid black;
 `
 
 export default Menu

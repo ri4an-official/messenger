@@ -1,5 +1,5 @@
 const Routes = () => {
-    return <div>Routes</div>
+    return <div></div>
 }
 
 export default Routes
