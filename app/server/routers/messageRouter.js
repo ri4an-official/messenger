@@ -3,7 +3,7 @@ import MessageController from '../controllers/MessageController.js'
 
 const router = new Router()
 
-router.get('/', MessageController.getAll)
+router.get('/:id', MessageController.getAll)
 router.get('/:id', MessageController.get)
 
 router.post('/', MessageController.create)

@@ -12,7 +12,8 @@ class MessageController {
     }
     getAll = async (req, resp) => {
         try {
-            const messages = await MessageService.getAll()
+            const { id } = req.params
+            const messages = await MessageService.getAll(id)
             return resp.json(messages)
         } catch (e) {
             resp.status(500).json(e)
